@@ -26,9 +26,9 @@ Connections:
 |--------------|-------------|
 | `main.c`     | Main program loop: reads time via `get_millis()`, formats and displays it. |
 | `timer.c`    | Timer1 setup with CTC mode and 10ms interrupt, tracks milliseconds with wrap at 60s. |
-| `timer.h`    | Header for `timer.c` functions: `timer_init_interrupts()`, `get_millis()`. |
+| `timer.h`    | Header for `timer.c` functions: `timer_init_interrupts()`, `get_millis()`, `timer_init()`, `timer_match()`, `reset_match()`. |
 | `digit.c`    | Manages digit multiplexing and 7-segment output. |
-| `digit.h`    | Header for digit control functions: `display_4digit()`, `init_digit()`. |
+| `digit.h`    | Header for digit control functions: `display_digit()`, `init_digit()`,  `clear_digit()`. |
 
 ## Building the Project
 This project is designed for the ATmega16 microcontroller running at 14.7456 MHz.
